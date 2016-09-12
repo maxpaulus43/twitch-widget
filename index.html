@@ -2,28 +2,29 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Twitch Website</title>
+    <title>Twitch App</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <div class="container">
-        <h3>Twitch App</h3>
-        <button id="refreshBtn" class="btn btn-primary"></button>
-        <ul id="userList">
-            <li>
-                <article>
-                    <h5>Max Paulus</h5>
-                    <p>Offline</p>
-                </article>
-            </li>
-            <li>
-                <article>
-                    <h5>Julia Paulus</h5>
-                    <p>Streaming Cool stuff!</p>
-                </article>
-            </li>
-        </ul>
+        <div class="text-center"><a href="http://www.twitch.com"><img src="img/twitch.png" alt="Twitch" height="60px"></a></div>
+        <div id="legend" class="col-cs-12">
+            <dl>
+                <dd><div class="online square"></div></dd>
+                <dt>Online</dt>
+                <dd><div class="offline square"></div></dd>
+                <dt>Offline</dt>
+                <dd><div class="account-closed square"></div></dd>
+                <dt>Inactive</dt>
+            </dl>
+        </div>
+
+        <span class="tab selected" id="all">All</span>
+        <span class="tab" id="online">Online</span>
+        <span class="tab" id="offline">Offline</span>
+
+        <ul id="userList" class="list-unstyled"></ul>
     </div>
     
     <script   src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>

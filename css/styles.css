@@ -1,3 +1,49 @@
-ul {
-    background-color: gray;
+h1,h2,h3,h4,h5 {
+    color: #6441a4;}
+
+.offline {
+    background-color: pink;
+}
+
+.online {
+    background-color: #dfd;
+}
+
+.account-closed {
+    background-color: lightgray;
+}
+
+.tab {
+    padding: 0 15px;
+}
+
+.tab:hover {
+    cursor: pointer;
+}
+
+.selected {
+    background-color: #e2dbf0;
+}
+
+#legend {
+    font-size: .8em;
+    float: right;
+}
+
+dd, dt {
+    display: inline-block;
+}
+
+.square {
+    height: 10px;
+    width: 10px;
+    box-shadow: 1px 1px 1px;
+}
+
+#userList {
+    border-left: 5px solid #6441a4;
+}
+
+#userList li {
+    padding-left: 10px;
 }
